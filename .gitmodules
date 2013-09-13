@@ -13,3 +13,6 @@
 [submodule "system"]
 	path = system
 	url = https://github.com/kohana/core
+[submodule "modules/arnal"]
+	path = modules/arnal
+	url = https://github.com/arnal/core.git
