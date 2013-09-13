@@ -120,6 +120,7 @@ Kohana::$config->attach(new Config_File);
  * Enable modules. Modules are referenced by a relative or absolute path.
  */
 Kohana::modules(array(
+	   'yaml'       => MODPATH.'yaml',       // YAML Parser
 	   'arnal'      => MODPATH.'arnal',      // Core of Arnal framework 
 	// 'dt'         => MODPATH.'dt',         // DataTypes module
 	// 'auth'       => MODPATH.'auth',       // Basic authentication

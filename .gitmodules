@@ -16,3 +16,6 @@
 [submodule "modules/arnal"]
 	path = modules/arnal
 	url = https://github.com/arnal/core.git
+[submodule "modules/yaml"]
+	path = modules/yaml
+	url = https://github.com/gevans/kohana-yaml
