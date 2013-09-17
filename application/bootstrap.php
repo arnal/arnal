@@ -103,7 +103,7 @@ if (isset($_SERVER['KOHANA_ENV']))
  * - boolean  expose      set the X-Powered-By header                        FALSE
  */
 Kohana::init(array(
-	'base_url'   => '/kohana/',
+	'base_url'   => '/fwtest/webroot/',
 ));
 
 /**
@@ -121,9 +121,11 @@ Kohana::$config->attach(new Config_File);
  */
 Kohana::modules(array(
 	   'yaml'       => MODPATH.'yaml',       // YAML Parser
+	   'dt'         => MODPATH.'dt',         // DataTypes module
 	   'arnal'      => MODPATH.'arnal',      // Core of Arnal framework 
-	// 'dt'         => MODPATH.'dt',         // DataTypes module
 	// 'auth'       => MODPATH.'auth',       // Basic authentication
+	// 'twitter-bootstrap' => MODPATH.'twitter-bootstrap',      // Twitter bootstrap 
+	// 'admin'      => MODPATH.'admin',      // Admin module
 	// 'cache'      => MODPATH.'cache',      // Caching with multiple backends
 	// 'codebench'  => MODPATH.'codebench',  // Benchmarking tool
 	// 'database'   => MODPATH.'database',   // Database access
@@ -143,3 +145,6 @@ Route::set('default', '(<controller>(/<action>(/<id>)))')
 		'controller' => 'index',
 		'action'     => 'index',
 	));
+
+Cookie::$salt = 'guddEwQuakWijcyicsOcbaypajPigIshEvbodsousfenManvidElsadsyickubatQuogdaktusGeilfEptib0ojhebNovdifcaib';
+
